@@ -14,6 +14,7 @@
 
 <svelte:element
 	this={link ? 'a' : 'button'}
+	on:click
 	class={`px-2 py-1 m-1 rounded cursor-pointer ${Class} ${dynamicClass}`}
 	{...$$restProps}><slot /></svelte:element
 >

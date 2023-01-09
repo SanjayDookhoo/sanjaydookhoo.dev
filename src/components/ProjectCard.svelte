@@ -15,7 +15,7 @@
 	on:mouseenter={() => (cardHovered = true)}
 	on:mouseleave={() => (cardHovered = false)}
 >
-	<div class="rounded-lg border-gray-300 border hover:shadow-2xl hover:border-2">
+	<div class="rounded-lg border-gray-300 border hover:shadow-2xl">
 		<div class="w-full h-48">
 			<img class="h-full w-full rounded-t-lg" src={imgSrc} />
 		</div>
