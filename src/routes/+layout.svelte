@@ -2,4 +2,6 @@
 	import '../app.css';
 </script>
 
-<slot />
+<div class="text-gray-700 tracking-wide">
+	<slot />
+</div>

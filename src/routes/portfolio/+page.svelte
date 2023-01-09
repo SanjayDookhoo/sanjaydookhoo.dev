@@ -3,9 +3,10 @@
 
 	let projects = [
 		{
-			name: 'name',
-			description: 'desct',
-			tagList: ['software', 'react'],
+			imgSrc: 'https://simonsankar.github.io/img/messiops2.png',
+			name: 'MessiOps',
+			description: 'A web app dedicated to show the pure god tier brilliance of Lionel Messi.',
+			tagList: ['reactjs', 'nextjs', 'strapi', 'antd', 'less'],
 			view: 'google.com',
 			source: 'google.com'
 		}

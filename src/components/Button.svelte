@@ -1,10 +1,19 @@
 <script>
-	export let Class, variant;
+	export let Class,
+		variant,
+		link = false;
+
+	let dynamicClass = '';
+	const variantMap = {
+		primary: 'bg-red-500 text-white hover:bg-red-600',
+		secondary: 'bg-gray-300 hover:bg-gray-400'
+	};
+
+	$: dynamicClass = variantMap[variant];
 </script>
 
-<button
-	class={`p-2 m-1 rounded ${variant == 'primary' ? 'bg-red-500 text-white' : ''} ${
-		variant == 'secondary' ? 'bg-gray-500' : ''
-	} ${Class}`}
-	{...$$restProps}><slot /></button
+<svelte:element
+	this={link ? 'a' : 'button'}
+	class={`px-2 py-1 m-1 rounded cursor-pointer ${Class} ${dynamicClass}`}
+	{...$$restProps}><slot /></svelte:element
 >
