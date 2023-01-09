@@ -7,8 +7,8 @@
 			name: 'MessiOps',
 			description: 'A web app dedicated to show the pure god tier brilliance of Lionel Messi.',
 			tagList: ['reactjs', 'nextjs', 'strapi', 'antd', 'less'],
-			view: 'google.com',
-			source: 'google.com'
+			view: 'http://www.google.com',
+			source: '/'
 		}
 	];
 </script>
