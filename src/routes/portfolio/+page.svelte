@@ -39,7 +39,7 @@ portfolio
 
 <Button on:click={() => (selectedTagList = [])} variant="secondary">show all</Button>
 {#each fullTagList as tag, i (tag)}
-	<button><Badge name={tag} /></button>
+	<button on:click={() => handleTagClick(tag)}><Badge name={tag} /></button>
 {/each}
 <div class="flex flex-wrap justify-center">
 	{#each filteredProjects as project, i (project.name)}
