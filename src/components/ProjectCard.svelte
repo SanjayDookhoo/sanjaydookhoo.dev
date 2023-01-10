@@ -11,7 +11,7 @@
 </script>
 
 <div
-	class="w-full m-2 rounded-lg border-gray-300 border hover:shadow-2xl flex flex-col md:flex-row md:items-center "
+	class="w-full m-2 rounded-lg border-gray-300 border hover:myshadow flex flex-col md:flex-row md:items-center "
 >
 	<div class="w-full divide-y p-4 md:w-480">
 		<div class={`flex flex-col`}>
