@@ -1,4 +1,5 @@
 <script>
+	import Badge from './Badge.svelte';
 	import Button from './Button.svelte';
 	import Chip from './Chip.svelte';
 
@@ -27,7 +28,7 @@
 					style={cardHovered ? '' : 'height: 30px;'}
 				>
 					{#each tagList as tag, i (tag)}
-						<Chip variant="portfolio" name={tag} />
+						<Badge name={tag} />
 					{/each}
 				</div>
 				<div class="text-4xl">{name}</div>

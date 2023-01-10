@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* https://cssgenerator.org/box-shadow-css-generator.html */
+/* Horizontal Shadow Length: 1px
+Vertical Shadow Length: 1px
+Blur Radius: 13px
+Spread Radius: 1px
+Shadow Color: rgb(0,0,0)
+Shadow Color Opacity: 0.65
+Inset: Off */
+.myshadow {
+	box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.65);
+	-webkit-box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.65);
+	-moz-box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.65);
+}
+.hover:myshadow:hover {
+	box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.65);
+	-webkit-box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.65);
+	-moz-box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.65);
+}
