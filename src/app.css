@@ -30,3 +30,21 @@ inputting this hex value into https://codepen.io/sosuke/pen/Pjoqqp gives a filte
 .social-media:hover {
 	filter: invert(99%) sepia(62%) saturate(6372%) hue-rotate(290deg) brightness(93%) contrast(113%);
 }
+
+.line-around {
+	display: flex;
+	flex-direction: row;
+}
+.line-around:before,
+.line-around:after {
+	content: '';
+	flex: 1 1;
+	border-bottom: 1px solid;
+	margin: auto;
+}
+.line-around:before {
+	margin-right: 10px;
+}
+.line-around:after {
+	margin-left: 10px;
+}

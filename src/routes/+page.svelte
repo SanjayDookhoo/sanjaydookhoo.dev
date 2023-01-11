@@ -36,9 +36,11 @@
 	};
 </script>
 
+<div class="text-4xl text-center p-2 line-around">About</div>
+
 <About />
 
-<div class="text-4xl text-center">Projects</div>
+<div class="text-4xl text-center p-2 line-around">Projects</div>
 
 <div class="flex flex-wrap">
 	<Badge
