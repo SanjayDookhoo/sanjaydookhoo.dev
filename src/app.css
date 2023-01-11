@@ -31,6 +31,7 @@ inputting this hex value into https://codepen.io/sosuke/pen/Pjoqqp gives a filte
 	filter: invert(99%) sepia(62%) saturate(6372%) hue-rotate(290deg) brightness(93%) contrast(113%);
 }
 
+/* https://stackoverflow.com/a/44647131/4224964 */
 .line-around {
 	display: flex;
 	flex-direction: row;
