@@ -20,3 +20,17 @@ Inset: Off */
 	-webkit-box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.65);
 	-moz-box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.65);
 }
+
+/* 
+hovered should be bg-red-300
+checking https://tailwindcss.com/docs/text-color, the rgb color is: rgb(252 165 165)
+using convertingcolors.com to do the conversion to hex gives: #FCA5A5
+inputting this hex value into https://codepen.io/sosuke/pen/Pjoqqp gives a filter that can be used 
+*/
+.social-media:hover {
+	filter: invert(99%) sepia(62%) saturate(6372%) hue-rotate(290deg) brightness(93%) contrast(113%);
+}
+
+.logo {
+	filter: invert(99%) sepia(62%) saturate(6372%) hue-rotate(290deg) brightness(93%) contrast(113%);
+}

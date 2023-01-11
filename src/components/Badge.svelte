@@ -1,5 +1,7 @@
 <script>
-	export let name;
+	export let name,
+		isActive = false,
+		inactive = false;
 	import reactjs from '../assets/reactjs.svg';
 	import fileManager from '../assets/fileManager.svg';
 	import graphql from '../assets/graphql.svg';
@@ -10,6 +12,10 @@
 	import plugin from '../assets/plugin.svg';
 
 	const badgeMap = {
+		showAll: {
+			fullName: 'Show All',
+			googleFontsIcon: 'apps'
+		},
 		reactjs: {
 			fullName: 'ReactJS',
 			icon: reactjs
@@ -43,9 +49,28 @@
 			icon: nodejs
 		}
 	};
+
+	let hovered = false;
 </script>
 
-<div class="rounded-lg myshadow border border-gray-500 flex p-2 m-2 items-center w-52">
-	<img class="w-8 h-8" src={badgeMap[name]?.icon} />
-	<div class="pl-4">{badgeMap[name]?.fullName}</div>
-</div>
+<button
+	class={inactive ? 'cursor-default' : 'cursor-pointer'}
+	on:click
+	on:mouseenter={() => (hovered = true)}
+	on:mouseleave={() => (hovered = false)}
+>
+	<div
+		class={`rounded-lg myshadow border border-gray-500 flex p-2 m-2 items-center w-52 ${
+			isActive ? 'bg-red-200' : ''
+		} ${!inactive && hovered ? 'bg-red-300' : ''}`}
+	>
+		{#if badgeMap[name]?.googleFontsIcon}
+			<span class="material-symbols-outlined w-8 h-8 flex items-center justify-center">
+				{badgeMap[name]?.googleFontsIcon}
+			</span>
+		{:else}
+			<img class="w-8 h-8" src={badgeMap[name]?.icon} />
+		{/if}
+		<div class="pl-4">{badgeMap[name]?.fullName}</div>
+	</div>
+</button>

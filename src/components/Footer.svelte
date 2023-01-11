@@ -2,10 +2,10 @@
 	import github from '../assets/github.svg';
 	import linkedin from '../assets/linkedin.svg';
 
-	const imgClass = 'w-8 h-8 mr-4';
+	const imgClass = 'w-8 h-8 mr-4 social-media';
 </script>
 
-<div class="rounded-lg bg-gray-100 flex justify-between items-center p-2 mb-2">
+<div class="rounded-lg bg-gray-100 flex justify-between items-center p-2 m-2">
 	<div>Before software can be reusable it first has to be usable.” - Ralph Johnson</div>
 	<div class="flex py-2">
 		<a href="https://github.com/SanjayDookhoo"><img class={imgClass} src={github} /></a>

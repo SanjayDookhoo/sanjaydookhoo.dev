@@ -17,7 +17,7 @@
 		<div class={`flex flex-col`}>
 			<div class={`flex flex-wrap`}>
 				{#each tagList as tag, i (tag)}
-					<Badge name={tag} />
+					<Badge name={tag} inactive={true} />
 				{/each}
 			</div>
 			<div class="p-2">

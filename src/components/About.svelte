@@ -3,7 +3,7 @@
 	import Button from './Button.svelte';
 </script>
 
-<div class="flex justify-center items-center py-4">
+<div class="flex justify-center items-center py-4 bg-red-300 rounded-lg my-4">
 	<img class="h-32 w-32 m-4" src={code} />
 	<div>
 		<div class="text-4xl">I'm Sanjay Dookhoo</div>
