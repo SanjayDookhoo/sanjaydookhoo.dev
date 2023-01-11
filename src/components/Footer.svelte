@@ -6,7 +6,7 @@
 </script>
 
 <div class="rounded-lg bg-gray-100 flex justify-between items-center p-2 m-2">
-	<div>Before software can be reusable it first has to be usable.” - Ralph Johnson</div>
+	<div>"Before software can be reusable it first has to be usable." - Ralph Johnson</div>
 	<div class="flex py-2">
 		<a href="https://github.com/SanjayDookhoo"><img class={imgClass} src={github} /></a>
 		<a href="https://linkedin.com/in/sanjay-dookhoo/"><img class={imgClass} src={linkedin} /></a>
