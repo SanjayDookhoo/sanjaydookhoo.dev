@@ -1,5 +1,5 @@
 <script>
-	import logo from '../assets/logo2.png';
+	import logo from '../assets/logo.png';
 	import github from '../assets/github.svg';
 	import linkedin from '../assets/linkedin.svg';
 
