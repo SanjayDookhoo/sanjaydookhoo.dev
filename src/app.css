@@ -30,7 +30,3 @@ inputting this hex value into https://codepen.io/sosuke/pen/Pjoqqp gives a filte
 .social-media:hover {
 	filter: invert(99%) sepia(62%) saturate(6372%) hue-rotate(290deg) brightness(93%) contrast(113%);
 }
-
-.logo {
-	filter: invert(99%) sepia(62%) saturate(6372%) hue-rotate(290deg) brightness(93%) contrast(113%);
-}
