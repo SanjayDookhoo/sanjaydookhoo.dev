@@ -1,7 +1,13 @@
+import portfolio1 from './assets/portfolio/portfolio1.svg';
+import nodejsBetterConsole1 from './assets/nodejsBetterConsole/nodejsBetterConsole1.png';
+import actionsFileManager1 from './assets/actionsFileManager/actionsFileManager1.png';
+import txnwallet1 from './assets/txnwallet/txnwallet1.png';
+import vitePluginSvelteBindSpread from './assets/vite.svg';
+
 export const projects = [
 	{
-		imgSrc:
-			'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png',
+		imgSrc: portfolio1,
+		isSvg: true,
 		name: 'Portfolio',
 		description:
 			'A compilation of my achievements, skills and qualifications to provide insight into my capabilities',
@@ -10,8 +16,7 @@ export const projects = [
 		source: 'https://github.com/SanjayDookhoo/sanjaydookhoo.dev'
 	},
 	{
-		imgSrc:
-			'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png',
+		imgSrc: nodejsBetterConsole1,
 		name: 'Nodejs Better Console',
 		description:
 			'Testing a node.js script is considerably different than testing javascript in a browser. This package provides additional functionality for debugging node.js via console messages.',
@@ -20,8 +25,8 @@ export const projects = [
 		source: 'https://github.com/SanjayDookhoo/nodejs-better-console'
 	},
 	{
-		imgSrc:
-			'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png',
+		imgSrc: vitePluginSvelteBindSpread,
+		isSvg: true,
 		name: 'Vite Plugin Svelte Bind Spread',
 		description:
 			'A vite plugin for svelte that by default, if a object is spread into a component, it will bind each property in the object as props.',
@@ -30,8 +35,7 @@ export const projects = [
 		source: 'https://github.com/SanjayDookhoo/vite-plugin-svelte-bind-spread'
 	},
 	{
-		imgSrc:
-			'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png',
+		imgSrc: actionsFileManager1,
 		name: 'Actions File Manager',
 		description:
 			'A File Manager web component (custom element) that can be implemented in vanilla Javascript or any Javascript framework such as, React, Vue or Angular. One of the most powerful features it provides are, "Custom Actions", where any file or folder can have a custom context menu action to perform any Javascript action. It is also a fully self hosted solution using Docker allowing full ownership of all files and data, ensuring the highest security.',
@@ -50,8 +54,7 @@ export const projects = [
 		]
 	},
 	{
-		imgSrc:
-			'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png',
+		imgSrc: txnwallet1,
 		name: 'TXNWallet',
 		description:
 			'A single wallet dashboard that allows multi blockchain analysis of all owned cryptocurrency and additional note keeping of specific historical transactions.',

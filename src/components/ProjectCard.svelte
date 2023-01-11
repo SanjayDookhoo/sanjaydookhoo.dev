@@ -5,7 +5,7 @@
 
 	export let project;
 
-	const { imgSrc, name, description, tagList, view, source } = project;
+	const { imgSrc, isSvg = false, name, description, tagList, view, source } = project;
 
 	let sourceExpand = false;
 </script>
@@ -15,7 +15,7 @@
 >
 	<div class="w-full divide-y p-4 md:w-480">
 		<div class={`flex flex-col`}>
-			<div class={`flex flex-wrap`}>
+			<div class={`flex flex-wrap justify-center`}>
 				{#each tagList as tag, i (tag)}
 					<Badge name={tag} inactive={true} />
 				{/each}
@@ -55,6 +55,10 @@
 		</div>
 	</div>
 	<div class="p-2 basis-0 grow">
-		<img class="h-full w-full rounded-lg" src={imgSrc} />
+		<img
+			class={`mx-auto ${isSvg ? 'h-1/2 w-1/2' : 'h-full w-full'} rounded-lg`}
+			src={imgSrc}
+			alt={`${name} Logo`}
+		/>
 	</div>
 </div>

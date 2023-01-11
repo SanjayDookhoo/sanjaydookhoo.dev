@@ -38,11 +38,15 @@
 
 <div class="text-4xl text-center p-2 line-around">About</div>
 
+<svelte:head>
+	<title>Portfolio</title>
+</svelte:head>
+
 <About />
 
 <div class="text-4xl text-center p-2 line-around">Projects</div>
 
-<div class="flex flex-wrap">
+<div class="flex flex-wrap justify-center">
 	<Badge
 		name="showAll"
 		on:click={() => (selectedTagList = [])}

@@ -69,7 +69,7 @@
 				{badgeMap[name]?.googleFontsIcon}
 			</span>
 		{:else}
-			<img class="w-8 h-8" src={badgeMap[name]?.icon} />
+			<img class="w-8 h-8" src={badgeMap[name]?.icon} alt={`${badgeMap[name]?.fullName} Logo`} />
 		{/if}
 		<div class="pl-4">{badgeMap[name]?.fullName}</div>
 	</div>
